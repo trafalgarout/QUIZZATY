@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الاختبارات العربية - Arabic Quiz Website</title>
+    <meta name="description" content="موقع اختبارات عربي متعدد اللغات يقدم مجموعة متنوعة من الاختبارات في مختلف المجالات">
+    <meta property="og:title" content="موقع الاختبارات العربية">
+    <meta property="og:description" content="موقع اختبارات عربي متعدد اللغات يقدم مجموعة متنوعة من الاختبارات في مختلف المجالات">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arabicquiz.example.com/">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/static-elements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6865939387108271"
+     crossorigin="anonymous"></script>
+    <style>
+        .hero-call-to-action {
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+            font-weight: bold;
+            color: #ffeb3b;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+        
+        .hero-description {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="container nav-container">
+            <div class="nav-right">
+                <a href="#" class="nav-link">الرئيسية</a>
+                <a href="#" class="nav-link">الاختبارات</a>
+                <a href="#" class="nav-link">الفئات</a>
+            </div>
+            <div class="nav-left">
+                <a href="#" class="nav-link">تسجيل الدخول</a>
+                <a href="#" class="nav-link highlight">إنشاء حساب</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h1>اختبر معلوماتك واكتشف قدراتك!</h1>
+                <p class="hero-subtitle">مرحباً بك في أكبر منصة للاختبارات الترفيهية والتعليمية على الإنترنت.</p>
+                <p class="hero-description">أكثر من 1000 سؤال متنوع في مجالات مثل: الثقافة العامة، الذكاء، الشخصيات، الأفلام، الموسيقى، الرياضة، والمزيد!</p>
+                <p class="hero-call-to-action">✨ استمتع، تعلم، وتحدَّ أصدقاءك!</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1,000+</span>
+                        <span class="stat-label">مستخدم</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9/5</span>
+                        <span class="stat-label">تقييم</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">75,000+</span>
+                        <span class="stat-label">اختبار</span>
+                    </div>
+                </div>
+                <a href="#categories-section" class="hero-button">ابدأ الاختبار الآن</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Categories Exploration Section -->
+            <section id="categories-section" class="categories-section">
+                <h2 class="section-title">استكشف الفئات</h2>
+                <p class="section-subtitle">اختر من بين مجموعة متنوعة من فئات الاختبارات</p>
+                
+                <div class="categories-grid" id="categories-container">
+                    <!-- Categories will be loaded here dynamically -->
+                    <div class="loading">جاري تحميل الفئات...</div>
+                </div>
+            </section>
+            
+            <!-- Featured Quizzes Section -->
+            <section class="featured-section">
+                <div class="container">
+                    <h2 class="section-title">الاختبارات المميزة</h2>
+                    <p class="section-subtitle">أكثر الاختبارات شعبية بين المستخدمين</p>
+                    
+                    <div class="featured-quizzes-grid">
+                        <!-- Quiz 1 - Technology -->
+                        <div class="featured-quiz-card" data-category="technology">
+                            <div class="featured-quiz-ribbon">شائع</div>
+                            <div class="featured-quiz-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h3 class="featured-quiz-title">اختبار التكنولوجيا الحديثة</h3>
+                            <p class="featured-quiz-description">اختبر معلوماتك في مجال التكنولوجيا والابتكارات الحديثة</p>
+                            <div class="featured-quiz-meta">
+                                <span class="quiz-difficulty">متوسط</span>
+                                <span class="quiz-questions">15 سؤال</span>
+                            </div>
+                            <a href="src/pages/quiz/technology01.html" class="featured-quiz-button">ابدأ الآن</a>
+                        </div>
+                        
+                        <!-- Quiz 2 - Science -->
+                        <div class="featured-quiz-card" data-category="science">
+                            <div class="featured-quiz-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h3 class="featured-quiz-title">اختبار العلوم العامة</h3>
+                            <p class="featured-quiz-description">اختبر معرفتك بأساسيات العلوم والاكتشافات العلمية</p>
+                            <div class="featured-quiz-meta">
+                                <span class="quiz-difficulty">سهل</span>
+                                <span class="quiz-questions">20 سؤال</span>
+                            </div>
+                            <a href="src/pages/quiz/science01.html" class="featured-quiz-button">ابدأ الآن</a>
+                        </div>
+                        
+                        <!-- Quiz 3 - History -->
+                        <div class="featured-quiz-card" data-category="history">
+                            <div class="featured-quiz-ribbon">جديد</div>
+                            <div class="featured-quiz-icon">
+                                <i class="fas fa-landmark"></i>
+                            </div>
+                            <h3 class="featured-quiz-title">اختبار التاريخ الإسلامي</h3>
+                            <p class="featured-quiz-description">اختبر معلوماتك في تاريخ الحضارة الإسلامية</p>
+                            <div class="featured-quiz-meta">
+                                <span class="quiz-difficulty">متوسط</span>
+                                <span class="quiz-questions">25 سؤال</span>
+                            </div>
+                            <a href="src/pages/quiz/islamic01.html" class="featured-quiz-button">ابدأ الآن</a>
+                        </div>
+                        
+                        <!-- Quiz 4 - Geography -->
+                        <div class="featured-quiz-card" data-category="geography">
+                            <div class="featured-quiz-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <h3 class="featured-quiz-title">اختبار الجغرافيا العالمية</h3>
+                            <p class="featured-quiz-description">اختبر معرفتك بالدول والعواصم والمعالم الجغرافية</p>
+                            <div class="featured-quiz-meta">
+                                <span class="quiz-difficulty">صعب</span>
+                                <span class="quiz-questions">20 سؤال</span>
+                            </div>
+                            <a href="src/pages/quiz/geography01.html" class="featured-quiz-button">ابدأ الآن</a>
+                        </div>
+                        
+                        <!-- Quiz 5 - Food -->
+                        <div class="featured-quiz-card" data-category="food">
+                            <div class="featured-quiz-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3 class="featured-quiz-title">اختبار المأكولات العالمية</h3>
+                            <p class="featured-quiz-description">اختبر معرفتك بالمطابخ العالمية وأشهر الأطباق</p>
+                            <div class="featured-quiz-meta">
+                                <span class="quiz-difficulty">سهل</span>
+                                <span class="quiz-questions">15 سؤال</span>
+                            </div>
+                            <a href="src/pages/quiz/food01.html" class="featured-quiz-button">ابدأ الآن</a>
+                        </div>
+                        
+                        <!-- Quiz 6 - Sports -->
+                        <div class="featured-quiz-card" data-category="sports">
+                            <div class="featured-quiz-ribbon">شائع</div>
+                            <div class="featured-quiz-icon">
+                                <i class="fas fa-futbol"></i>
+                            </div>
+                            <h3 class="featured-quiz-title">اختبار كرة القدم العالمية</h3>
+                            <p class="featured-quiz-description">اختبر معرفتك بتاريخ كرة القدم واللاعبين والبطولات</p>
+                            <div class="featured-quiz-meta">
+                                <span class="quiz-difficulty">متوسط</span>
+                                <span class="quiz-questions">20 سؤال</span>
+                            </div>
+                            <a href="src/pages/quiz/sports01.html" class="featured-quiz-button">ابدأ الآن</a>
+                        </div>
+                        
+                        <!-- Quiz 7 - General -->
+                        <div class="featured-quiz-card" data-category="general">
+                            <div class="featured-quiz-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3 class="featured-quiz-title">اختبار المعلومات العامة</h3>
+                            <p class="featured-quiz-description">اختبر معلوماتك العامة في مختلف المجالات</p>
+                            <div class="featured-quiz-meta">
+                                <span class="quiz-difficulty">متوسط</span>
+                                <span class="quiz-questions">30 سؤال</span>
+                            </div>
+                            <a href="src/pages/quiz/general01.html" class="featured-quiz-button">ابدأ الآن</a>
+                        </div>
+                        
+                        <!-- Quiz 8 - Astronomy -->
+                        <div class="featured-quiz-card" data-category="astronomy">
+                            <div class="featured-quiz-ribbon">جديد</div>
+                            <div class="featured-quiz-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="featured-quiz-title">اختبار الفضاء والفلك</h3>
+                            <p class="featured-quiz-description">اختبر معرفتك بالكواكب والنجوم والظواهر الفلكية</p>
+                            <div class="featured-quiz-meta">
+                                <span class="quiz-difficulty">صعب</span>
+                                <span class="quiz-questions">18 سؤال</span>
+                            </div>
+                            <a href="src/pages/quiz/astronomy01.html" class="featured-quiz-button">ابدأ الآن</a>
+                        </div>
+                        
+                        <!-- Quiz 9 - Animals -->
+                        <div class="featured-quiz-card" data-category="animals">
+                            <div class="featured-quiz-icon">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                            <h3 class="featured-quiz-title">اختبار عالم الحيوان</h3>
+                            <p class="featured-quiz-description">اختبر معرفتك بالحيوانات وموائلها وسلوكياتها</p>
+                            <div class="featured-quiz-meta">
+                                <span class="quiz-difficulty">سهل</span>
+                                <span class="quiz-questions">22 سؤال</span>
+                            </div>
+                            <a href="src/pages/quiz/animals01.html" class="featured-quiz-button">ابدأ الآن</a>
+                        </div>
+                    </div>
+                    
+                    <div class="view-all-container">
+                        <a href="#categories-container" class="view-all-button">عرض جميع الاختبارات</a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Statistics Section -->
+            <section class="stats-section">
+                <div class="container stats-container">
+                    <h2 class="stats-title section-title">إحصائيات مذهلة</h2>
+                    <p class="stats-subtitle section-subtitle">إنجازات موقعنا بالأرقام</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-value" data-count="300000">+300,000</div>
+                            <div class="stat-text">مستخدم مسجل</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-value">4.9/5</div>
+                            <div class="stat-text">تقييم المستخدمين</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-value" data-count="75000">+75,000</div>
+                            <div class="stat-text">اختبار تم إجراؤه</div>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="stat-value" data-count="200">+200</div>
+                            <div class="stat-text">اختبار متاح</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer spacer to account for fixed footer -->
+    <div class="footer-spacer"></div>
+
+    <footer class="modern-footer">
+        <!-- Footer Wave Shape -->
+        <div class="footer-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,165.3C384,160,480,128,576,122.7C672,117,768,139,864,165.3C960,192,1056,224,1152,224C1248,224,1344,192,1392,176L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg>
+        </div>
+        
+        <div class="container">
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <div class="newsletter-content">
+                    <h3>اشترك في نشرتنا الإخبارية</h3>
+                    <p>احصل على أحدث الاختبارات والتحديثات مباشرة إلى بريدك الإلكتروني</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="أدخل بريدك الإلكتروني" required>
+                    <button type="submit">اشترك الآن</button>
+                </form>
+            </div>
+            
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3 class="footer-title">عن الموقع</h3>
+                    <p>موقع الاختبارات العربية هو منصة تعليمية تفاعلية تقدم اختبارات متنوعة في مختلف المجالات باللغة العربية لمساعدة المستخدمين على اختبار معلوماتهم وتطوير مهاراتهم.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon" aria-label="لينكد إن"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3 class="footer-title">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="src/pages/popular.html">الاختبارات الشائعة</a></li>
+                        <li><a href="src/pages/categories.html">جميع الفئات</a></li>
+                        <li><a href="src/pages/new.html">أحدث الاختبارات</a></li>
+                        <li><a href="src/pages/about.html">من نحن</a></li>
+                        <li><a href="src/pages/contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section categories">
+                    <h3 class="footer-title">فئات الاختبارات</h3>
+                    <ul class="footer-links">
+                        <li><a href="src/pages/category/general.html">ثقافة عامة</a></li>
+                        <li><a href="src/pages/category/technology.html">تكنولوجيا</a></li>
+                        <li><a href="src/pages/category/science.html">علوم</a></li>
+                        <li><a href="src/pages/category/history.html">تاريخ</a></li>
+                        <li><a href="src/pages/category/sports.html">رياضة</a></li>
+                        <li><a href="src/pages/category/art.html">فن</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section contact">
+                    <h3 class="footer-title">اتصل بنا</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@arabicquiz.example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+123 456 7890</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>الرياض، المملكة العربية السعودية</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>متاح على مدار الساعة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 موقع الاختبارات العربية - جميع الحقوق محفوظة</p>
+                <div class="footer-bottom-links">
+                    <a href="src/pages/privacy.html">سياسة الخصوصية</a>
+                    <a href="src/pages/terms.html">الشروط والأحكام</a>
+                    <a href="src/pages/faq.html">الأسئلة الشائعة</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="footer-floating-element footer-floating-1"></div>
+        <div class="footer-floating-element footer-floating-2"></div>
+        <div class="footer-floating-element footer-floating-3"></div>
+    </footer>
+
+    <script src="src/js/categories.js"></script>
+    <script src="src/js/main.js"></script>
+    <script src="src/js/stats-animation.js"></script>
+    <script src="src/js/featured-quizzes.js"></script>
+    <script src="src/js/footer-animation.js"></script>
+    <script src="src/js/ad-placements.js"></script>
+</body>
+</html>

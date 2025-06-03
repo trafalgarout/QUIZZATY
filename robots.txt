@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://arabicquiz.example.com/sitemap.xml
