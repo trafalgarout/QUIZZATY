@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الاختبارات الشائعة | موقع الاختبارات العربية</title>
+    <link rel="stylesheet" href="../../src/css/main.css">
+    <link rel="stylesheet" href="../../src/css/static-elements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="container nav-container">
+            <div class="nav-right">
+                <a href="../../index.html" class="nav-link">الرئيسية</a>
+                <a href="categories.html" class="nav-link">الاختبارات</a>
+                <a href="categories.html" class="nav-link">الفئات</a>
+            </div>
+            <div class="nav-left">
+                <a href="#" class="nav-link">تسجيل الدخول</a>
+                <a href="#" class="nav-link highlight">إنشاء حساب</a>
+            </div>
+        </div>
+    </nav>
+    
+    <style>
+        .centered-back-button {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            position: relative;
+            z-index: 1000;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4e54c8;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #3f43a9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+    
+    <div class="centered-back-button">
+        <a href="../../index.html" class="back-button">
+            <i class="fas fa-arrow-right"></i> العودة للرئيسية
+        </a>
+    </div>
+
+    <main>
+        <div class="container">
+            <section class="popular-header">
+                <h1 class="page-title">الاختبارات الشائعة</h1>
+            </section>
+
+            <section class="popular-quizzes-section">
+                <div class="section-header">
+                    <h2 class="section-title">أكثر الاختبارات شعبية</h2>
+                    <p class="section-description">اكتشف الاختبارات الأكثر شعبية على موقعنا والتي حازت على إعجاب المستخدمين</p>
+                </div>
+
+                <div class="popular-quizzes-grid">
+                    <!-- Quiz Card 1 -->
+                    <div class="featured-quiz-card purple">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار الذكاء العام</h3>
+                        <p class="featured-quiz-description">اختبر مستوى ذكائك العام من خلال مجموعة متنوعة من الأسئلة</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> صعب</span>
+                            <span><i class="fas fa-question-circle"></i> 15 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/general01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 2 -->
+                    <div class="featured-quiz-card blue">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار المعرفة التقنية</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في مجال التكنولوجيا والحاسوب والإنترنت</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> متوسط</span>
+                            <span><i class="fas fa-question-circle"></i> 12 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/technology01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 3 -->
+                    <div class="featured-quiz-card green">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار العلوم العامة</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك العلمية في مختلف المجالات العلمية</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> سهل</span>
+                            <span><i class="fas fa-question-circle"></i> 10 أسئلة</span>
+                        </div>
+                        <a href="../pages/quiz/science01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 4 -->
+                    <div class="featured-quiz-card orange">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار التاريخ العربي</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في تاريخ الحضارة العربية والإسلامية</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> متوسط</span>
+                            <span><i class="fas fa-question-circle"></i> 15 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/history01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 5 -->
+                    <div class="featured-quiz-card red">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار الرياضة</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في عالم الرياضة وكرة القدم والألعاب الأولمبية</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> صعب</span>
+                            <span><i class="fas fa-question-circle"></i> 20 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/sports01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 6 -->
+                    <div class="featured-quiz-card teal">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار السينما والمسلسلات</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في عالم السينما والمسلسلات العربية والعالمية</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> سهل</span>
+                            <span><i class="fas fa-question-circle"></i> 15 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/entertainment01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 7 -->
+                    <div class="featured-quiz-card purple">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار الأدب العربي</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في الأدب العربي والشعر والنثر</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> متوسط</span>
+                            <span><i class="fas fa-question-circle"></i> 12 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/literature01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 8 -->
+                    <div class="featured-quiz-card blue">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار الجغرافيا</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في جغرافيا العالم والدول والعواصم</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> صعب</span>
+                            <span><i class="fas fa-question-circle"></i> 15 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/geography01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 9 -->
+                    <div class="featured-quiz-card green">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار الطعام والمطبخ</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في عالم الطعام والمأكولات العربية والعالمية</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> سهل</span>
+                            <span><i class="fas fa-question-circle"></i> 10 أسئلة</span>
+                        </div>
+                        <a href="../pages/quiz/food01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 10 -->
+                    <div class="featured-quiz-card orange">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار الموسيقى</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في عالم الموسيقى والغناء العربي والعالمي</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> متوسط</span>
+                            <span><i class="fas fa-question-circle"></i> 12 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/music01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 11 -->
+                    <div class="featured-quiz-card red">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار الفن والرسم</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في عالم الفن والرسم والفنانين المشهورين</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> صعب</span>
+                            <span><i class="fas fa-question-circle"></i> 15 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/art01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+
+                    <!-- Quiz Card 12 -->
+                    <div class="featured-quiz-card teal">
+                        <div class="featured-quiz-ribbon">شائع</div>
+                        <div class="featured-quiz-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="featured-quiz-title">اختبار الصحة والطب</h3>
+                        <p class="featured-quiz-description">اختبر معلوماتك في مجال الصحة والطب والجسم البشري</p>
+                        <div class="featured-quiz-meta">
+                            <span><i class="fas fa-star"></i> متوسط</span>
+                            <span><i class="fas fa-question-circle"></i> 12 سؤال</span>
+                        </div>
+                        <a href="../pages/quiz/health01.html" class="featured-quiz-button">ابدأ الآن</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+        
+    <footer class="simple-footer">
+        <div class="container">
+            <div class="simple-footer-content">
+                <p>© 2025 موقع الاختبارات العربية - جميع الحقوق محفوظة</p>
+                <div class="simple-footer-links">
+                    <a href="/src/pages/about.html">من نحن</a>
+                    <a href="/src/pages/contact.html">اتصل بنا</a>
+                    <a href="/src/pages/privacy.html">سياسة الخصوصية</a>
+                    <a href="/src/pages/terms.html">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/categories.js"></script>
+    <script src="../../js/category-template.js"></script>
+</body>
+</html>
+<script src="../../src/js/main.js"></script>
+    <script src="../js/footer-animation.js"></script>
+    <script src="../js/featured-quizzes.js"></script>
+</body>
+</html>

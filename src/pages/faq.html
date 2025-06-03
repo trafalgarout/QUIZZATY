@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة | موقع الاختبارات العربية</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/footer-pages.css">
+    <link rel="stylesheet" href="../css/decorative-elements.css">
+    <link rel="stylesheet" href="../css/static-elements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="container nav-container">
+            <div class="nav-right">
+                <a href="../../index.html" class="nav-link">الرئيسية</a>
+                <a href="categories.html" class="nav-link">الاختبارات</a>
+                <a href="categories.html" class="nav-link">الفئات</a>
+            </div>
+            <div class="nav-left">
+                <a href="#" class="nav-link">تسجيل الدخول</a>
+                <a href="#" class="nav-link highlight">إنشاء حساب</a>
+            </div>
+        </div>
+    </nav>
+    
+    <style>
+        .centered-back-button {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            position: relative;
+            z-index: 1000;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4e54c8;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #3f43a9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+    
+    <div class="centered-back-button">
+        <a href="../../index.html" class="back-button">
+            <i class="fas fa-arrow-right"></i> العودة للرئيسية
+        </a>
+    </div>
+
+    <main>
+        <div class="container">
+            <section class="faq-header">
+                <h1 class="page-title">الأسئلة الشائعة</h1>
+            </section>
+
+            <section class="faq-main-section">
+                <div class="faq-intro">
+                    <h2>مرحباً بك في قسم الأسئلة الشائعة</h2>
+                    <p class="lead">هنا ستجد إجابات للأسئلة الأكثر شيوعاً حول موقعنا واختباراتنا. إذا لم تجد إجابة لسؤالك، يرجى <a href="contact.html">الاتصال بنا</a> وسنكون سعداء بمساعدتك.</p>
+                </div>
+
+                <div class="faq-search">
+                    <div class="faq-search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="faqSearch" placeholder="ابحث عن سؤال...">
+                    </div>
+                </div>
+
+                <div class="faq-categories">
+                    <button class="faq-category-btn active" data-category="all">جميع الأسئلة</button>
+                    <button class="faq-category-btn" data-category="general">أسئلة عامة</button>
+                    <button class="faq-category-btn" data-category="account">الحسابات</button>
+                    <button class="faq-category-btn" data-category="quizzes">الاختبارات</button>
+                    <button class="faq-category-btn" data-category="technical">مسائل تقنية</button>
+                </div>
+
+                <div class="faq-list">
+                    <!-- أسئلة عامة -->
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h3>ما هو موقع الاختبارات العربية؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>موقع الاختبارات العربية هو منصة تعليمية تفاعلية تقدم اختبارات متنوعة في مختلف المجالات باللغة العربية. هدفنا هو مساعدة المستخدمين على اختبار معلوماتهم وتطوير مهاراتهم بطريقة ممتعة وسهلة.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h3>هل استخدام الموقع مجاني؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>نعم، استخدام موقع الاختبارات العربية مجاني بالكامل. يمكنك الوصول إلى جميع الاختبارات والميزات دون الحاجة إلى دفع أي رسوم.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="general">
+                        <div class="faq-question">
+                            <h3>كيف يمكنني التواصل مع فريق الدعم؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>يمكنك التواصل معنا من خلال <a href="contact.html">صفحة الاتصال</a> أو عبر البريد الإلكتروني على info@arabicquiz.example.com. نحن نسعى للرد على جميع الاستفسارات في غضون 24 ساعة.</p>
+                        </div>
+                    </div>
+
+                    <!-- أسئلة الحسابات -->
+                    <div class="faq-item" data-category="account">
+                        <div class="faq-question">
+                            <h3>هل أحتاج إلى إنشاء حساب لاستخدام الموقع؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>لا، يمكنك استخدام معظم ميزات الموقع دون الحاجة إلى إنشاء حساب. ومع ذلك، إنشاء حساب يتيح لك حفظ نتائجك ومتابعة تقدمك والوصول إلى ميزات إضافية.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="account">
+                        <div class="faq-question">
+                            <h3>كيف يمكنني إنشاء حساب؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>لإنشاء حساب، انقر على زر "تسجيل" في أعلى الصفحة، ثم أدخل بريدك الإلكتروني وكلمة مرور واسمك. يمكنك أيضاً التسجيل باستخدام حسابك على فيسبوك أو جوجل.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="account">
+                        <div class="faq-question">
+                            <h3>نسيت كلمة المرور الخاصة بي، كيف يمكنني استعادتها؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>إذا نسيت كلمة المرور الخاصة بك، انقر على "نسيت كلمة المرور؟" في صفحة تسجيل الدخول. سيتم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني المسجل.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="account">
+                        <div class="faq-question">
+                            <h3>كيف يمكنني تغيير معلومات حسابي؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>بعد تسجيل الدخول، انتقل إلى "الملف الشخصي" من القائمة المنسدلة في أعلى الصفحة. هناك يمكنك تحديث معلوماتك الشخصية وتغيير كلمة المرور وضبط إعدادات الإشعارات.</p>
+                        </div>
+                    </div>
+
+                    <!-- أسئلة الاختبارات -->
+                    <div class="faq-item" data-category="quizzes">
+                        <div class="faq-question">
+                            <h3>كيف يتم تصنيف الاختبارات؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>يتم تصنيف الاختبارات حسب المجال (مثل الثقافة العامة، العلوم، التكنولوجيا، التاريخ، إلخ) ومستوى الصعوبة (سهل، متوسط، صعب). يمكنك تصفح الاختبارات حسب هذه التصنيفات من خلال <a href="categories.html">صفحة الفئات</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="quizzes">
+                        <div class="faq-question">
+                            <h3>كم عدد الأسئلة في كل اختبار؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>يختلف عدد الأسئلة من اختبار لآخر، ولكن معظم الاختبارات تحتوي على 10-20 سؤالاً. يمكنك معرفة عدد الأسئلة قبل بدء الاختبار من خلال معلومات الاختبار المعروضة.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="quizzes">
+                        <div class="faq-question">
+                            <h3>هل هناك وقت محدد لإكمال الاختبار؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>بعض الاختبارات لها وقت محدد، والبعض الآخر ليس له وقت محدد. يتم عرض معلومات الوقت (إن وجدت) قبل بدء الاختبار وأثناء الاختبار.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="quizzes">
+                        <div class="faq-question">
+                            <h3>كيف يتم احتساب النتائج؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>يتم احتساب النتائج بناءً على عدد الإجابات الصحيحة. في نهاية الاختبار، ستحصل على نتيجتك النهائية مع تحليل مفصل لأدائك وإجاباتك الصحيحة والخاطئة.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="quizzes">
+                        <div class="faq-question">
+                            <h3>هل يمكنني مشاركة نتائجي على وسائل التواصل الاجتماعي؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>نعم، بعد إكمال الاختبار، ستظهر لك أزرار مشاركة تتيح لك مشاركة نتائجك على فيسبوك وتويتر وواتساب وغيرها من منصات التواصل الاجتماعي.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="quizzes">
+                        <div class="faq-question">
+                            <h3>كيف يمكنني اقتراح اختبار جديد؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>يمكنك اقتراح اختبار جديد من خلال <a href="contact.html">صفحة الاتصال</a>. اختر "اقتراح" من قائمة الموضوع واكتب تفاصيل الاختبار الذي ترغب في إضافته.</p>
+                        </div>
+                    </div>
+
+                    <!-- أسئلة تقنية -->
+                    <div class="faq-item" data-category="technical">
+                        <div class="faq-question">
+                            <h3>ما هي متطلبات النظام لاستخدام الموقع؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>يعمل موقعنا على جميع المتصفحات الحديثة مثل Chrome وFirefox وSafari وEdge. نوصي باستخدام أحدث إصدار من متصفحك للحصول على أفضل تجربة.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="technical">
+                        <div class="faq-question">
+                            <h3>هل يعمل الموقع على الأجهزة المحمولة؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>نعم، موقعنا متجاوب بالكامل ويعمل على جميع الأجهزة المحمولة والأجهزة اللوحية. يمكنك الوصول إلى جميع الميزات والاختبارات من أي جهاز.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="technical">
+                        <div class="faq-question">
+                            <h3>ماذا أفعل إذا واجهت مشكلة تقنية؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>إذا واجهت أي مشكلة تقنية، يرجى تجربة تحديث الصفحة أو مسح ذاكرة التخزين المؤقت للمتصفح. إذا استمرت المشكلة، يرجى الاتصال بنا مع وصف تفصيلي للمشكلة والجهاز والمتصفح الذي تستخدمه.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="technical">
+                        <div class="faq-question">
+                            <h3>هل يمكنني استخدام الموقع بدون اتصال بالإنترنت؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>لا، يتطلب استخدام موقعنا اتصالاً بالإنترنت لتحميل الاختبارات وحفظ النتائج. نحن نعمل على تطوير ميزة الوضع غير المتصل في المستقبل.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="technical">
+                        <div class="faq-question">
+                            <h3>هل بياناتي آمنة على موقعكم؟</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>نعم، نحن نأخذ أمان بياناتك على محمل الجد. نستخدم بروتوكول HTTPS لتشفير جميع البيانات المرسلة بين متصفحك وخوادمنا. يمكنك الاطلاع على <a href="privacy.html">سياسة الخصوصية</a> لمزيد من المعلومات حول كيفية جمع واستخدام بياناتك.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="no-results-message" id="noResultsMessage">
+                    <i class="fas fa-search"></i>
+                    <h3>لم يتم العثور على نتائج</h3>
+                    <p>لم نتمكن من العثور على إجابة لسؤالك. يرجى تجربة مصطلحات بحث مختلفة أو <a href="contact.html">الاتصال بنا</a> للحصول على المساعدة.</p>
+                </div>
+
+                <div class="faq-contact">
+                    <h3>لم تجد إجابة لسؤالك؟</h3>
+                    <p>لا تتردد في التواصل معنا وسنقوم بالرد على استفسارك في أقرب وقت ممكن.</p>
+                    <a href="contact.html" class="contact-button">تواصل معنا</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer spacer to account for fixed footer -->
+    <div class="footer-spacer"></div>
+
+    
+    <footer class="simple-footer">
+        <div class="container">
+            <div class="simple-footer-content">
+                <p>© 2025 موقع الاختبارات العربية - جميع الحقوق محفوظة</p>
+                <div class="simple-footer-links">
+                    <a href="/src/pages/about.html">من نحن</a>
+                    <a href="/src/pages/contact.html">اتصل بنا</a>
+                    <a href="/src/pages/privacy.html">سياسة الخصوصية</a>
+                    <a href="/src/pages/terms.html">الشروط والأحكام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/categories.js"></script>
+    <script src="../../js/category-template.js"></script>
+</body>
+</html>
+<script src="../../src/js/main.js"></script>
+    <script src="../js/footer-animation.js"></script>
+    <script src="../js/faq.js"></script>
+    <script src="../js/decorative-elements.js"></script>
+</body>
+</html>
