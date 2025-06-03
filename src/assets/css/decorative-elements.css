@@ -1,0 +1,186 @@
+/* Decorative Elements CSS for Arabic Quiz Website
+   Adds beautiful visual elements to enhance the appearance of all pages */
+
+/* Floating Particles */
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    opacity: 0.1;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Animated Background Gradient */
+.gradient-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, 
+        rgba(108, 92, 231, 0.03) 0%, 
+        rgba(253, 203, 110, 0.03) 25%, 
+        rgba(225, 112, 85, 0.03) 50%, 
+        rgba(0, 206, 201, 0.03) 75%, 
+        rgba(108, 92, 231, 0.03) 100%);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -2;
+    pointer-events: none;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Decorative Corner Elements */
+.corner-decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.corner-top-right {
+    top: 0;
+    right: 0;
+    background: radial-gradient(circle at top right, var(--primary), transparent 70%);
+}
+
+.corner-bottom-left {
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle at bottom left, var(--secondary), transparent 70%);
+}
+
+/* Decorative Dividers */
+.fancy-divider {
+    height: 5px;
+    width: 100%;
+    margin: 2rem 0;
+    background: linear-gradient(to right, transparent, var(--primary), var(--secondary), transparent);
+    position: relative;
+}
+
+.fancy-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+}
+
+/* Animated Dots Background */
+.dot-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(var(--primary) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Shiny Card Effect */
+.shiny-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.shiny-card::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.1) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: rotate(30deg);
+    animation: shinyEffect 6s linear infinite;
+    pointer-events: none;
+}
+
+@keyframes shinyEffect {
+    0% { transform: rotate(30deg) translateX(-100%); }
+    100% { transform: rotate(30deg) translateX(100%); }
+}
+
+/* Floating Elements Animation */
+.float-element {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Page Transition Effects */
+.page-transition {
+    animation: pageTransition 0.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes pageTransition {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover Glow Effect */
+.hover-glow {
+    transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 15px rgba(108, 92, 231, 0.5);
+}
+
+/* Decorative Icons */
+.decorative-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+}
+
+/* RTL-specific decorative elements */
+.rtl-decoration {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M10,50 Q50,10 90,50 Q50,90 10,50 Z" fill="none" stroke="%236c5ce7" stroke-width="2"/></svg>');
+    opacity: 0.1;
+    transform: rotate(45deg);
+}

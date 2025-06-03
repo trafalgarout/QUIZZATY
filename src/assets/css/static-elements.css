@@ -1,0 +1,225 @@
+/* Static Header and Footer CSS */
+
+/* Static Header - Sleek Professional Design */
+header.main-header, .top-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    height: 50px; /* Even more compact */
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Sleek navigation elements */
+.nav-container {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.nav-link, .nav-button {
+    padding: 0.4rem 0.8rem !important;
+    font-size: 0.85rem !important;
+    font-weight: 500 !important;
+    letter-spacing: 0.2px;
+    transition: all 0.2s ease;
+    margin: 0 2px;
+}
+
+.nav-link:hover, .nav-button:hover {
+    background-color: rgba(108, 92, 231, 0.08);
+    color: #6c5ce7 !important;
+}
+
+.logo img {
+    max-height: 35px !important;
+}
+
+/* Make dropdown more compact and modern */
+.dropdown-content {
+    top: 50px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 5px 0;
+}
+
+.dropdown-content a {
+    padding: 8px 15px !important;
+    font-size: 0.85rem !important;
+}
+
+/* Active state for navigation */
+.nav-link.active, .nav-button.active {
+    color: #6c5ce7 !important;
+    position: relative;
+}
+
+.nav-link.active:after, .nav-button.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 20px;
+    height: 2px;
+    background-color: #6c5ce7;
+    border-radius: 2px;
+}
+
+/* Adjust main content to account for fixed header */
+main {
+    margin-top: 50px; /* Reduced margin to match smaller header */
+    min-height: calc(100vh - 50px - 300px); /* Adjusted for smaller header and footer */
+    padding-bottom: 30px; /* Reduced space before footer */
+}
+
+/* Static Footer - Compact and Professional */
+footer.modern-footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+}
+
+/* Make footer elements more compact */
+.footer-newsletter {
+    padding: 15px !important;
+    margin-bottom: 15px !important;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 15px !important;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 15px !important;
+}
+
+.footer-title {
+    font-size: 1rem !important;
+    margin-bottom: 10px !important;
+}
+
+.footer-links li {
+    margin-bottom: 5px !important;
+}
+
+.footer-bottom {
+    padding: 10px 15px !important;
+    margin-top: 10px !important;
+}
+
+/* Create a spacer for the footer */
+.footer-spacer {
+    height: 300px; /* Reduced height for more compact footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    main {
+        margin-top: 50px; /* Even smaller margin for mobile */
+        min-height: calc(100vh - 50px - 450px); /* Adjust for mobile footer height */
+    }
+    
+    .footer-spacer {
+        height: 450px; /* More compact footer on mobile */
+    }
+    
+    /* Further compact navigation on mobile */
+    .nav-link, .nav-button {
+        padding: 0.4rem 0.8rem !important;
+        font-size: 0.85rem !important;
+    }
+}
+
+/* For smaller screens, make the footer position static to avoid UI issues */
+@media (max-height: 700px) {
+    footer.modern-footer {
+        position: static;
+    }
+    
+    main {
+        min-height: auto;
+    }
+    
+    .footer-spacer {
+        display: none;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    footer.modern-footer {
+        position: static;
+    }
+    
+    main {
+        margin-top: 50px;
+        min-height: auto;
+    }
+    
+    .footer-spacer {
+        display: none;
+    }
+}
+
+/* Simple Footer Styles */
+.simple-footer {
+    background-color: #1a237e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.simple-footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.simple-footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.simple-footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.simple-footer-links a:hover {
+    color: #ffeb3b;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .simple-footer-links {
+        gap: 10px;
+    }
+}
